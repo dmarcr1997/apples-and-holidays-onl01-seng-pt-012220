@@ -68,12 +68,26 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   count = 0
   holiday_hash.each do |seasons|
-    puts "#{seasons}:\n"
+    season = seasons
+    seasons.to_s
+    season.split
+    season.each do |s|
+      s.capitalize!
+    end
+    season.join(" ")
+    puts "#{season}:\n"
     seasons.each do |holiday|
-      count = holiday.length
+      count = 0
       puts "\t#{holiday}: "
       holiday.each do |value|
-        puts "#{value},"
+        if count < holiday.length
+          puts "#{value},"
+          count +=1
+        else
+          puts "#{value}\n"
+        end
+      end
+    end
 end
 
 def all_holidays_with_bbq(holiday_hash)
