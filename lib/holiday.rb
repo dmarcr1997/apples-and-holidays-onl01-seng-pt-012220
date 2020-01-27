@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   count = 0
   holiday_hash.each do |seasons|
-    season = seasons.keys
+    
     season.to_s
     season.split
     season.each do |s|
