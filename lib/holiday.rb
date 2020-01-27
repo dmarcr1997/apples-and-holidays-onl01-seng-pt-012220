@@ -52,6 +52,7 @@ def all_winter_holiday_supplies(holiday_hash)
     holidays.each do |goods|
       goods.each do|supply|
         puts supply
+      end
     end
   end
 end
