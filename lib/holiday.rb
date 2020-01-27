@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
     end
     season_ary.join(" ")
     season = season_ary
-    season.gsub(/"|\[|\]/, '')
+    season.scan(/[a-zA-Z0-9]+/)
     season.to_s
     puts season
     holidays_hash.each do |holidays, supply_arrays|
