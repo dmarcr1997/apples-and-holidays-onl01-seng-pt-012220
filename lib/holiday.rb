@@ -83,7 +83,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       hol_ary.join(" ")
       holiday = hol_ary
-      puts "#{season}: \n \t #{holiday}: #{supply_array.flatten}\n"
+      puts "#{season}: \n \t #{holiday}: #{supply_arrays.flatten}\n"
     end
   end
     
