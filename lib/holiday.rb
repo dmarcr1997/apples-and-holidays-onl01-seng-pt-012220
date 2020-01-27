@@ -69,6 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
   count = 0
   holiday_hash.each do |seasons|
     season = seasons
+    puts season
     season.to_s
     season.split
     season.each do |s|
