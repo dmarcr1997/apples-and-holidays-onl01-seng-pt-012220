@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
     season = seasons.to_s
     season_ary = season.split("_")
     season_ary.each do |s|
-      s.capitalize
+      s.capitalize!
     end
     season_ary.join(" ")
     season = season_ary
@@ -79,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holidays.to_s
       hol_ary = holiday.split("_")
       hol_ary.each do |h|
-        h.capitaliz
+        h.capitalie!
       end
       hol_ary.join(" ")
       holiday = hol_ary
