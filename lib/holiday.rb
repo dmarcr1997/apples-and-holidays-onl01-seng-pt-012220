@@ -72,11 +72,12 @@ def all_supplies_in_holidays(holiday_hash)
     season_ary = season.split("_")
     season_ary.each do |s|
       s.capitalize!
+      s << ":"
     end
     season_ary.join(" ")
     season = season_ary
     season.to_s
-    puts "#{season}:"
+    puts season
     holidays_hash.each do |holidays, supply_arrays|
       holiday = holidays.to_s
       hol_ary = holiday.split("_")
