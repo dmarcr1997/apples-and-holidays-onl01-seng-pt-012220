@@ -68,7 +68,9 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   count = 0
   while count < holiday_hash.count
-    holiday_hash[0].to_s
+    season = holiday_hash[count].to_s
+    season.split
+    season.each
   
   
 end
