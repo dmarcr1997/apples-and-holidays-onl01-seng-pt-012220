@@ -86,11 +86,9 @@ def all_supplies_in_holidays(holiday_hash)
         h << ":"
         holiday << h
       end
-      puts holiday
-      supply_arrays.each do |s|
-        supplies = s.join(", ")
-      end
-      puts supplies
+      supplies = supply_arrays.join(", ")
+      puts "\t#{holiday}"
+     
         
         
       
