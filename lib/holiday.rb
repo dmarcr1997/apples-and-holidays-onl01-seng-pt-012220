@@ -52,7 +52,9 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].each do |holiday|
     holiday.each do |goods|
       winter_supplies << goods
+    end
   end
+  winter_supplies
 end
 
 def all_supplies_in_holidays(holiday_hash)
