@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons|
     puts "#{seasons}:\n"
     seasons.each do |holiday|
-      count = 0
+      count = holiday.length
       puts "\t#{holiday}: "
       holiday.each do |value|
         puts "#{value},"
