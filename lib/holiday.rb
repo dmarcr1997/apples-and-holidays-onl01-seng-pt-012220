@@ -68,9 +68,14 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   count = 0
   while count < holiday_hash.count
+    puts holiday_hash[0]
     season = holiday_hash[count].to_s
-    season.split
-    season.each
+    season.split("_")
+    season.each do |s|
+      s.capitalize
+    end
+    season.join(" ")
+    
   
   
 end
