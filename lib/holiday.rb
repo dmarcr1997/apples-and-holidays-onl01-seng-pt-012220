@@ -81,9 +81,16 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holidays.to_s
       hol_ary = holiday.split("_")
       holiday = ""
+      count = 0
       hol_ary.each do |h|
-        h.capitalize!
-        holiday << "#{h} "
+        if count ==0
+          h.capitalize!
+          holiday << h
+          count +=1
+        else 
+          h.capitalize!
+          holiday << " #{h}"
+        end
       end
       holiday << ":"
       supplies = supply_arrays.join(", ")
