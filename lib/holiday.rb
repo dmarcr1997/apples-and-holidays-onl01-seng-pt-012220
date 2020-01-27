@@ -80,11 +80,13 @@ def all_supplies_in_holidays(holiday_hash)
     holidays_hash.each do |holidays, supply_arrays|
       holiday = holidays.to_s
       hol_ary = holiday.split("_")
+      holiday = ""
       hol_ary.each do |h|
         h.capitalize!
+        h << ":"
+        holiday << h
       end
-      hol_ary.join(" ")
-      holiday = hol_ary.to_s
+      puts "#{holiday} #{supply_arrays}"
       
     end
   end
