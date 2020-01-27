@@ -76,7 +76,6 @@ def all_supplies_in_holidays(holiday_hash)
       s << ":"
       season << s
     end
-  
     puts season
     holidays_hash.each do |holidays, supply_arrays|
       holiday = holidays.to_s
