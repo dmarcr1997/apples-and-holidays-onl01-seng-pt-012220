@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   count = 0
-  puts holiday_hash[0]
+  puts holiday_hash[0].to_s
   # while count < holiday_hash.count
     
   #   season = holiday_hash[count].to_s
